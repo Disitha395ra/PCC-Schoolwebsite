@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body1{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: goldenrod;
+}
+h8{
+    font-family: "Book Antiqua";
+    color: blue;
+    font-size:36px;
+}
+.typewritter{
+    position: relative;
+}
+.typewritter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #f44336;
+    background-color: goldenrod;
+    width: 100%;
+    animation: typing 3s steps(27) alternate infinite,
+                    line 1s infinite;
+}
+@keyframes typing{
+    to{
+     width: 0%;
+    }
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
